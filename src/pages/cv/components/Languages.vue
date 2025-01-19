@@ -14,5 +14,4 @@ const Languages: string[] = ['german', 'english' ];
 </template>
 
 
-
 <style scoped></style>

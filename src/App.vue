@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import CV from './pages/cv/cv.vue';
+import CV from './pages/cv/CV.vue';
 </script>
 
-<template>
+<template class="mx-1">
   <CV/>
 </template>
 

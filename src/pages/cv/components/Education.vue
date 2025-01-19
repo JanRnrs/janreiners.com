@@ -30,7 +30,6 @@ const schools:School[] = [
     <div v-for="school in schools" :key="school.id" class="">
       <h3 class="">{{ school.degree }}</h3>
       <p class="">{{ school.institution }} - {{ school.dates }}</p>
-      <p>{{ school.description }}</p>
     </div>
   </div>
 </template>

@@ -1,10 +1,13 @@
 <script setup lang="ts">
+import ProfilPicture from '@/assets/profilPicture.png';
 </script>
 
 <template>
-    <div >
-        <h2>Picture</h2>
-    </div>
+    <img
+        :src="ProfilPicture"
+        alt="Photo of me" 
+        class="block aspect-square"
+    />
 </template>
 
 
