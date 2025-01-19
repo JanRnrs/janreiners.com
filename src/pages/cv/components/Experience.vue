@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-
+import SectionHeadline from './SectionHeadline.vue';
 interface Job {
   id: number;
   title: string;
@@ -29,7 +29,7 @@ const jobs = ref<Job[]>([
 
 <template>
   <div class="">
-    <h2 class="">Experience</h2>
+    <SectionHeadline headline="Experience"/>
     <div v-for="job in jobs" :key="job.id" class="">
       <h3 class="">{{ job.title }}</h3>
       <p class="">{{ job.company }} - {{ job.dates }}</p>

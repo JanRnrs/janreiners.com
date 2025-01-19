@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import SectionHeadline from './SectionHeadline.vue';
 interface School {
   id: number;
   degree: string;
@@ -26,7 +26,7 @@ const schools:School[] = [
 
 <template>
   <div class="">
-    <h2 class="">Education</h2>
+    <SectionHeadline headline="Education"/>
     <div v-for="school in schools" :key="school.id" class="">
       <h3 class="">{{ school.degree }}</h3>
       <p class="">{{ school.institution }} - {{ school.dates }}</p>

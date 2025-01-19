@@ -1,18 +1,16 @@
 <script setup lang="ts">
+import config from '@/config.json';
+import SectionHeadline from './SectionHeadline.vue';
 
-const skills: string[] = ['Skill 1', 'Skill 2', 'Skill 3'];
-
+const skills: string = config.cv.skillsList;
 </script>
 
 <template>
-    <div >
-        <h2>Skills</h2>
-        <ul >
-            <li v-for="skill in skills" :key="skill">{{ skill }}</li>
-        </ul>
-    </div>
+  <div>
+    <SectionHeadline headline="Skills"/>
+    {{skills}}
+  </div>
 </template>
 
-
-
-<style scoped></style>
+<style scoped>
+</style>
