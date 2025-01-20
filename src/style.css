@@ -7,9 +7,20 @@
 
 html {
     font-family: "Lato";
+    print-color-adjust: exact;
 }
 
 
 a {
     color: rgb(29 78 216)
+}
+
+@media print {
+    @page {
+        margin: 1.4cm 1.6cm
+    }
+
+    body {
+        margin: 0
+    }
 }

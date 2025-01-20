@@ -19,12 +19,12 @@ const jobs = ref<Job[]>(config.cv.Experience);
 </script>
 
 <template>
-  <div >
+  <div>
     <div class="text-mainColor-700">
       <SectionHeadline headline="Experience"/>
     </div>
     <div class="flex flex-col gap-4">
-      <div v-for="(job, index) in jobs" :key="index" class="px-2">
+      <div v-for="(job, index) in jobs" :key="index" class="px-2 print:break-inside-avoid">
       <span class="flex justify-between"> 
         <h3 class="text-xl font-bold">{{ job.Position }}</h3>
         <p class="text-m text-gray-400"> {{ job.Date }}  </p>

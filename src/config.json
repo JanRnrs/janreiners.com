@@ -1,7 +1,7 @@
 {
   "cv":
   {
-    "skillsList":"Javascript, React, Vue, Typescript, Git, Docker, Node.js, Scrum, Github Actions, Figma, Kubernetes, Azure, AWS, Datadog, Jenkins, Responsive Design, SCSS, Python, Django, PHP, Laravel, Delphi, C++, Kotlin, Java",
+    "skillsList":"Javascript, React, Vue, Typescript, Git, Docker, Node.js, Scrum, Github Actions, Figma, Kubernetes, Azure, AWS, Datadog, Jenkins, Responsive Design, RESTful, GraphQL, SCSS, Python, Django, PHP, Laravel, Delphi, C++, Kotlin, Java",
     "Languages":
       [
         {
@@ -47,7 +47,7 @@
       {
         "Company":"Next Levels",
         "Position":"Intern",
-        "Date":"AUG 2019 - SEPT2020",
+        "Date":"AUG 2019 - SEPT 2020",
         "Location":"Mönchengladbach, Germany",
         "summary":"Created an abscence / vacation calendar as plugin in October CMS.",
         "Description":[],

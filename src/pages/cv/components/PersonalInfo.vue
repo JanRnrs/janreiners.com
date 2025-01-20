@@ -1,5 +1,7 @@
 <script setup lang="ts">
-
+const showContactDetails = import.meta.env.VITE_SHOW_CONTACT_DETAILS === 'true';
+const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
+const emailAddress = import.meta.env.VITE_EMAIL_ADDRESS;
 </script>
 
 <template>
@@ -15,19 +17,16 @@
                 <img src="@/assets/linkedin_black_logo_icon.svg" alt="linkedin" class="w-5 h-5 ">
                 <a href="https://www.linkedin.com/in/jan-reiners-98243620a/">https://www.linkedin.com/in/jan-reiners-98243620a/</a>
             </div>
-            <div class="flex gap-1 items-center">
-                <img src="@/assets/phone-icon.svg" alt="mobile number" class="w-5 h-5">
-                <p>+49123456789</p>
-            </div>
-            <div class="flex gap-1 items-center">
-                <img src="@/assets/email-icon.svg" alt="email address" class="w-5 h-5 ">
-                <p>sample@mail.com</p>
+            <div v-if="showContactDetails">
+                <div class="flex gap-1 items-center">
+                    <img src="@/assets/phone-icon.svg" alt="mobile number" class="w-5 h-5">
+                    <p>{{ phoneNumber }}</p>
+                </div>
+                <div class="flex gap-1 items-center">
+                    <img src="@/assets/email-icon.svg" alt="email address" class="w-5 h-5 ">
+                    <p>{{ emailAddress }}</p>
+                </div>
             </div>
         </div>
-        
     </div>
 </template>
-
-
-
-<style scoped></style>

@@ -1,4 +1,3 @@
-<!-- filepath: /d:/Dokumente/development/janreiners.com/src/pages/cv/Cv.vue -->
 <script setup lang="ts">
 import Experience from './components/Experiences/Experience.vue';
 import Education from './components/Education.vue';
@@ -13,7 +12,7 @@ import GridContainer from './components/GridContainer.vue';
   <div class="print:text-xs md:mx-[1.6cm]">
     <GridContainer>
       <ProfilPicture />
-      <div class="flex col-span-2 p-3 items-center">
+      <div class="flex col-span-2 p-3 items-center print:pb-0 print:px-0">
         <PersonalInfo />
       </div>
     </GridContainer>
@@ -22,7 +21,7 @@ import GridContainer from './components/GridContainer.vue';
         <Skills class=""/>
         <Languages />
       </div>
-      <div class="md:col-span-2 md:p-2 gap-4 flex flex-col px-8">
+      <div class="md:col-span-2 md:p-2 print:col-span-2 gap-4 flex flex-col px-8 print:p-2 print:py-4">
         <Experience />
         <Education />
       </div>
@@ -31,5 +30,4 @@ import GridContainer from './components/GridContainer.vue';
 </template>
 
 <style scoped>
-/* Add any additional styles here */
 </style>
