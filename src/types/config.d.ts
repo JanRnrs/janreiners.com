@@ -1,6 +1,6 @@
-interface Skill {
-  German: string;
-  English: string;
+interface LanguageSkill {
+  language: string;
+  skillLevel: string;
 }
 
 interface Experience {
@@ -17,6 +17,7 @@ interface Education {
   School: string;
   Degree: string;
   Field: string;
+  Grade: string;
   Date: string;
   Location: string;
 }
@@ -24,7 +25,7 @@ interface Education {
 interface Config {
   cv: {
     skillsList: string;
-    Languages: Skill[];
+    Languages: LanguageSkill[];
     Experience: Experience[];
     Education: Education[];
   };

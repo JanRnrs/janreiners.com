@@ -1,6 +1,6 @@
 <!-- filepath: /d:/Dokumente/development/janreiners.com/src/pages/cv/Cv.vue -->
 <script setup lang="ts">
-import Experience from './components/Experience.vue';
+import Experience from './components/Experiences/Experience.vue';
 import Education from './components/Education.vue';
 import Skills from './components/Skills.vue';
 import ProfilPicture from './components/ProfilPicture.vue';
@@ -18,14 +18,12 @@ import GridContainer from './components/GridContainer.vue';
       </div>
     </GridContainer>
     <GridContainer>
-      <div class="bg-mainColor-700 text-white px-8 py-8 gap-8 md:py-3">
-        <Skills />
+      <div class="bg-mainColor-700 text-white px-8 flex flex-col py-8 gap-8 md:py-3">
+        <Skills class=""/>
         <Languages />
       </div>
-      <div class="md:col-span-2 md:p-2 gap-6 px-8">
-        
+      <div class="md:col-span-2 md:p-2 gap-4 flex flex-col px-8">
         <Experience />
-        
         <Education />
       </div>
     </GridContainer>

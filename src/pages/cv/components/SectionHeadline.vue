@@ -6,5 +6,5 @@ const { headline = '' } = defineProps<SectionHeadlineProps>()
 </script>
 
 <template>
-<h3 class="border-b-4 border-b-current text-4xl  pb-2 mb-2">{{headline}}</h3>
+<h3 class="border-b-4 border-b-current text-4xl font-bold pb-2 mb-2">{{headline}}</h3>
 </template>
