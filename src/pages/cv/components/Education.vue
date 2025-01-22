@@ -1,40 +1,26 @@
 <script setup lang="ts">
+import config from '@/config.json';
+import SectionHeadline from './SectionHeadline.vue';
 
-interface School {
-  id: number;
-  degree: string;
-  institution: string;
-  dates: string;
-}
-
-const schools:School[] = [
-  {
-    id: 1,
-    degree: 'Bachelor',
-    institution: 'Fh Aachen',
-    dates: 'from - until',
-  },
-  {
-    id: 2,
-    degree: 'Abitur',
-    institution: 'Gymnasium Am Geroweiher',
-    dates: 'from - until',
-
-  }
-];
+const schools: Education[] = config.cv.Education;
 </script>
 
 <template>
-  <div class="">
-    <h2 class="">Education</h2>
-    <div v-for="school in schools" :key="school.id" class="">
-      <h3 class="">{{ school.degree }}</h3>
-      <p class="">{{ school.institution }} - {{ school.dates }}</p>
-      <p>{{ school.description }}</p>
+  <div>
+    <div class="text-mainColor-700">
+      <SectionHeadline headline="Education"/>
+    </div>
+    <div v-for="(school, index) in schools" :key="index" class="mb-4">
+      <span class="flex justify-between"> 
+        <h3 class="text-xl font-bold">{{ school.Degree + ', '+ school.Field }}</h3> 
+        <p class="text-m text-gray-400"> {{ school.Date }}  </p>
+      </span>
+      <p class="text-m font-bold">{{ school.School }}  </p>
+      <p class="text-m text-gray-400"> {{ school.Location}} </p>
+      <p class="text-m"> Full-time, Grade: {{ school.Grade}} </p>
     </div>
   </div>
 </template>
 
-
-
-<style scoped></style>
+<style scoped>
+</style>

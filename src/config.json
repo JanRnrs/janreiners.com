@@ -1,0 +1,69 @@
+{
+  "cv":
+  {
+    "skillsList":"Javascript, React, Vue, Typescript, Git, Docker, Node.js, Scrum, Github Actions, Figma, Kubernetes, Azure, AWS, Datadog, Jenkins, Responsive Design, RESTful, GraphQL, SCSS, Python, Django, PHP, Laravel, Delphi, C++, Kotlin, Java",
+    "Languages":
+      [
+        {
+          "language":"German",
+          "skillLevel":"Native"
+        },
+        {
+          "language":"English",
+          "skillLevel":"Fluent"
+        }
+      ],
+    "Experience": 
+    [
+      {
+        "Company":"Santander Consumer Technology Services GmbH",
+        "Position":"Software Engineer",
+        "Date":"OCT 2020 - PRESENT",
+        "Location":"Mönchengladbach, Germany",
+        "summary": "Software Developer for multi-brand/white-label applications in the mobility sales sector; mainly worked on car dealership platforms for vehicle financing and leasing; focusing on Frontend Engineering.",
+        "Description":[
+          "expanded functionality by developing new features and maintaining the production system used by car dealerships across Germany.",
+          "collaborated closely with product owners and architecture team to ensure alignment with business goals and to deliver features that meet user needs effectively.",
+          "Built a new version of the platform from scratch using micro frontend architecture, implementing best practices and laying the groundwork for future development.",
+          "Implemented responsive design.",
+          "Supported the deployments of the applications."
+        ],
+        "Skills": ["Vue", "React", "Typescript", "SpringBoot"]
+      },
+      {
+        "Company":"Santander Consumer Technology Services GmbH",
+        "Position":"Intern",
+        "Date":" OCT 2019 - SEPT 2020",
+        "Location":"Mönchengladbach, Germany",
+        "summary":"Revamped the process for generating quarterly reports that assess the performance of credit scorecards as part of my bachelor thesis.",
+        "Description":[
+          "Analyzed the current state of the process and evaluated it against business process criteria.",
+          "Collaborated with the relevant department to design the desired future state of the process.",
+          "Developed a web application to modernize and simplify the report generation process.",
+          "Created graphs and visualizations in python to present data results in the reports."
+        ],
+        "Skills": ["Python", "Django", "Matplotlib"]
+      },
+      {
+        "Company":"Next Levels",
+        "Position":"Intern",
+        "Date":"AUG 2019 - SEPT 2020",
+        "Location":"Mönchengladbach, Germany",
+        "summary":"Created an abscence / vacation calendar as plugin in October CMS.",
+        "Description":[],
+        "Skills":["PHP", "Laravel", "OctoberCMS" ]
+      }
+    ],
+    "Education":
+    [
+      {
+        "School":"FH Aachen University of Applied Sciences",
+        "Degree":"Bachelor of Science",
+        "Field":"Informatics",
+        "Grade":"2.4",
+        "Date":"OCT 2015 - SEPT 2020",
+        "Location":"Aachen, Germany"
+      }
+    ]
+  }
+}

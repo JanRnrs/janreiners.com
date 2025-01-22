@@ -1,18 +1,25 @@
 <script setup lang="ts">
+import config from '@/config.json';
+import SectionHeadline from './SectionHeadline.vue';
 
-const Languages: string[] = ['german', 'english' ];
+interface Language {
+  language: string;
+  skillLevel: string;
+}
 
+const languages: Language[] = config.cv.Languages;
 </script>
 
 <template>
-    <div >
-        <h2>Skills</h2>
-        <ul >
-            <li v-for="lang in Languages" :key="lang">{{ lang }}</li>
-        </ul>
-    </div>
+  <div>
+    <SectionHeadline headline="Languages"/>
+    <ul>
+      <li v-for="(language, index) in languages" :key="index">
+        {{ language.language }}: {{ language.skillLevel }}
+      </li>
+    </ul>
+  </div>
 </template>
 
-
-
-<style scoped></style>
+<style scoped>
+</style>
