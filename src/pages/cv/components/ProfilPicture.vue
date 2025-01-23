@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProfilPicture from '@/assets/profilPicture.png';
+import ProfilPicture from '@/assets/profilPicture.jpg';
 </script>
 
 <template>
