@@ -7,10 +7,9 @@ const skills: string = config.cv.skillsList;
 
 <template>
   <div>
-    <SectionHeadline headline="Skills"/>
-    {{skills}}
+    <SectionHeadline headline="Skills" />
+    {{ skills }}
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

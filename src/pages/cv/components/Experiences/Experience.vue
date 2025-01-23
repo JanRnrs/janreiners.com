@@ -21,29 +21,37 @@ const jobs = ref<Job[]>(config.cv.Experience);
 <template>
   <div>
     <div class="text-mainColor-700">
-      <SectionHeadline headline="Experience"/>
+      <SectionHeadline headline="Experience" />
     </div>
     <div class="flex flex-col gap-4">
-      <div v-for="(job, index) in jobs" :key="index" class="px-2 print:break-inside-avoid">
-      <span class="flex justify-between"> 
-        <h3 class="text-xl font-bold">{{ job.Position }}</h3>
-        <p class="text-m text-gray-400"> {{ job.Date }}  </p>
-      </span>
-      
-      <p class="text-m font-bold">{{ job.Company }} </p>
-      <p class="text-m text-gray-400">  {{ job.Location }}</p>
-      <p>{{ job.summary }}</p>
-      <ul class="list-disc pl-4">
-        <li v-for="(desc, i) in job.Description" :key="i">{{ desc }}</li>
-      </ul>
-      <p class="gap-1 flex">
-        <ExperienceSkill v-for="(skill, i) in job.Skills" :key="i" :skill="skill" />
-      </p>
+      <div
+        v-for="(job, index) in jobs"
+        :key="index"
+        class="px-2 break-inside-avoid-page"
+      >
+        <span class="flex justify-between">
+          <h3 class="text-xl">{{ job.Position }}</h3>
+          <p class="text-m text-gray-400">{{ job.Date }}</p>
+        </span>
+
+        <p class="text-m font-bold">{{ job.Company }}</p>
+        <p class="text-m text-gray-400">{{ job.Location }}</p>
+        <p>{{ job.summary }}</p>
+        <ul class="list-disc pl-4">
+          <li v-for="(desc, i) in job.Description" :key="i">{{ desc }}</li>
+        </ul>
+        <div
+          class="flex gap-x-1 gap-y-1 pt-1 items-start flex-wrap print:text-xs text-sm leading-tight"
+        >
+          <ExperienceSkill
+            v-for="(skill, i) in job.Skills"
+            :key="i"
+            :skill="skill"
+          />
+        </div>
+      </div>
     </div>
-    </div>
-   
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

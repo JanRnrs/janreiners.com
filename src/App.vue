@@ -2,9 +2,8 @@
 import CV from './pages/cv/CV.vue';
 </script>
 
-<template class="mx-1">
-  <CV/>
+<template>
+  <CV />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
