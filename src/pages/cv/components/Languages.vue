@@ -12,7 +12,7 @@ const languages: Language[] = config.cv.Languages;
 
 <template>
   <div>
-    <SectionHeadline headline="Languages"/>
+    <SectionHeadline headline="Languages" />
     <ul>
       <li v-for="(language, index) in languages" :key="index">
         {{ language.language }}: {{ language.skillLevel }}
@@ -21,5 +21,4 @@ const languages: Language[] = config.cv.Languages;
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

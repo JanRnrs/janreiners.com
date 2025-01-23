@@ -9,19 +9,25 @@ import GridContainer from './components/GridContainer.vue';
 </script>
 
 <template>
-  <div class="print:text-xs md:mx-[1.6cm]">
+  <div class="print:text-xs md:mx-[1.5cm]">
     <GridContainer>
       <ProfilPicture />
-      <div class="flex col-span-2 p-3 items-center print:pb-0 print:px-0">
-        <PersonalInfo />
+      <div class="flex col-span-2 p-2 items-center">
+        <PersonalInfo
+          class="flex flex-col px-6 md:px-0 pb-6 md:pb-0 print:pb-0 print:px-0"
+        />
       </div>
     </GridContainer>
     <GridContainer>
-      <div class="bg-mainColor-700 text-white px-8 flex flex-col py-8 gap-8 md:py-3">
-        <Skills class=""/>
+      <div
+        class="bg-mainColor-700 text-white px-8 py-8 flex flex-col gap-5 md:py-3 print:py-5"
+      >
+        <Skills class="" />
         <Languages />
       </div>
-      <div class="md:col-span-2 md:p-2 print:col-span-2 gap-4 flex flex-col px-8 print:p-2 print:py-4">
+      <div
+        class="md:col-span-2 print:col-span-2 py-4 md:p-2 md:py-3 flex flex-col px-8 gap-6 print:p-2 print:py-5"
+      >
         <Experience />
         <Education />
       </div>
@@ -29,5 +35,4 @@ import GridContainer from './components/GridContainer.vue';
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -3,12 +3,7 @@ import ProfilPicture from '@/assets/profilPicture.png';
 </script>
 
 <template>
-    <img
-        :src="ProfilPicture"
-        alt="Photo of me" 
-        class="block aspect-square"
-    />
+  <img :src="ProfilPicture" alt="Photo of Jan" class="block aspect-square" />
 </template>
-
 
 <style scoped></style>
