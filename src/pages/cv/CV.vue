@@ -32,6 +32,9 @@ import GridContainer from './components/GridContainer.vue';
         <Education />
       </div>
     </GridContainer>
+    <div class="print:hidden">
+      This page was optimised for a print view.
+    </div>
   </div>
 </template>
 
